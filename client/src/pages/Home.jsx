@@ -44,7 +44,7 @@ const Home = () => {
               <h1 className="text-white text-center mt-2">MERN CRUD App</h1>
             </div>
           </div>
-          <div className="col-md-12 ">
+          <div className="col-md-12 row ">
             <form onSubmit={handleSubmit}>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">
