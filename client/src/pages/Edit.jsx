@@ -12,7 +12,7 @@ const Edit = () => {
   useEffect(() => {
     const getAllData = async () => {
       const res = await axios.get(
-        `http://localhost:9000/api/v1/users/single/${id}`
+        `https://node-js-weld.vercel.app/api/v1/users/single/${id}`
       );
       setInput(res.data);
     };
@@ -21,7 +21,7 @@ const Edit = () => {
 
   const handleEditData = async (e) => {
     e.preventDefault();
-    await axios.put(`http://localhost:9000/api/v1/users/${id}`, input);
+    await axios.put(`https://node-js-weld.vercel.app/api/v1/users/${id}`, input);
     navigate("/");
   };
   return (
